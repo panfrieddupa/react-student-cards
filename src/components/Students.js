@@ -16,7 +16,7 @@ function Students({ cards }) {
             <Card className='Students'>
                 <Card.Img variant='top' src={require(`../img/${cards.image}`)} />
                 <Card.Body>
-                    <Card.Title>{cards.name}</Card.Title>
+                    <Card.Title className='card-title'>{cards.name}</Card.Title>
                     <Card.Text className='card-text'>
                     <Routes>
                         <Route path={`/grade/${cards.name}`} element={`${cards.gpa}`}></Route>

@@ -28,7 +28,7 @@ function StudentList() {
 
     const cardMap = cardInfo.map(cards => <Students cards={cards} />)
 
-    return <div>
+    return <div className='inline-block-display'>
         <h1>Students List</h1>
         <div className='card-grid'>
                     {cardMap}
